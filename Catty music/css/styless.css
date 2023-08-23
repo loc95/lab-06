@@ -1,0 +1,152 @@
+html,
+body {
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(209, 201, 201);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: black;
+  font-size: 0.9em;
+}
+
+main {
+  flex: 1 0 auto;
+  display: flex;
+}
+
+aside {
+  flex: 0 0 240px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #e2dbdb;
+}
+
+aside i.fa {
+  font-size: 1.5em;
+}
+.sb-cate {
+  padding: 0 10px;
+}
+.sb-item {
+  padding: 0 10px;
+  color: white;
+  font-weight: bold;
+}
+.sp-icon {
+  color: #fff;
+}
+
+section.content .music-head {
+  flex: 0 0 280px;
+  display: flex;
+  padding: 40px;
+  background-color: rgb(149, 158, 158);
+}
+
+section.content .music-head .codegym-music {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  color: black;
+  padding-left: 50px;
+}
+
+li p {
+  flex: 0 0 25%;
+}
+li span.codegym-cloud {
+  border: 1px solid rgb(108, 108, 103);
+  font-size: 0.6em;
+  padding: 3px;
+}
+li:nth-child(2n) {
+  background-color: rgb(209, 201, 201);
+}
+
+li:hover {
+  background-color: aqua;
+}
+
+section.content .music-head .codegym-music {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  color: #ffffff;
+  padding-left: 50px;
+}
+
+.codegym-music div:nth-child(1) {
+  margin-bottom: auto;
+}
+.codegym-music div:nth-child(2) {
+  margin-top: 0;
+}
+
+.codegym-music div:nth-child(2) i.fa {
+  font-size: 0.9em;
+  padding: 0 0.7em;
+  font-weight: 300;
+}
+.codegym-music div:nth-child(1) p:first-child {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+.codegym-music div:nth-child(1) p:not(:first-child) {
+  font-size: 0.9em;
+  margin: 2px 0;
+}
+section.content .music-list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+  margin: 0;
+  background-color: #fff;
+  color: black;
+}
+
+footer {
+  /*don't grow or shrink, 
+    just stay at a height of 90px */
+  display: flex;
+  flex: 0 0 100px;
+  padding: 10px;
+  color: #fff;
+  background-color: #0a0445;
+}
+
+.codegym-music-small {
+  display: flex;
+  margin-right: auto;
+}
+
+.codegym-music-small img {
+  padding-right: 10px;
+  padding-bottom: 20px;
+  width: 100px;
+}
+
+.codegym-music-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  width: 80%;
+}
