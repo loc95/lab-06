@@ -29,12 +29,10 @@ main {
 }
 
 aside {
-  flex: 0 0 240px;
-  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: #e2dbdb;
 }
 
@@ -53,11 +51,15 @@ aside i.fa {
   color: #fff;
 }
 
+section.content {
+  width: 100%;
+}
+
 section.content .music-head {
   flex: 0 0 280px;
   display: flex;
   padding: 40px;
-  background-color: rgb(149, 158, 158);
+  background-color: #4e4e4e;
 }
 
 section.content .music-head .codegym-music {
@@ -78,11 +80,11 @@ li span.codegym-cloud {
   padding: 3px;
 }
 li:nth-child(2n) {
-  background-color: rgb(209, 201, 201);
+  background-color: #f2f2f2;
 }
 
 li:hover {
-  background-color: aqua;
+  background-color: #5073a8;
 }
 
 section.content .music-head .codegym-music {
@@ -123,14 +125,21 @@ section.content .music-list {
   color: black;
 }
 
+section.content .music-list > li {
+  display: flex;
+}
+
 footer {
   /*don't grow or shrink, 
     just stay at a height of 90px */
-  display: flex;
-  flex: 0 0 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   padding: 10px;
+  background-color: #5073a8;
   color: #fff;
-  background-color: #0a0445;
+  text-align: center;
 }
 
 .codegym-music-small {
@@ -149,4 +158,5 @@ footer {
   align-items: flex-end;
   justify-content: space-around;
   width: 80%;
+  margin-left: -146px;
 }
